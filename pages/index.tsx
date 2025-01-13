@@ -1,6 +1,6 @@
-import Head from "next/head";
-import { Box } from "@chakra-ui/react";
-
+import Head from 'next/head';
+import { Box, Flex, Text } from '@chakra-ui/react';
+import { DataTable, Sidemenu } from '@/components';
 
 export default function Home() {
   return (
@@ -12,12 +12,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <h1>
-          title
-        </h1>
-        <Box>
-          content
-        </Box>
+          {/* サイドメニュー */}
+          {/* <Sidemenu /> */}
+          {/* メインコンテンツ */}
+          <Box bg="white" color="blue" width="100px" height="100px">
+            <h1 color="red">title</h1>
+            <Text color="red">Text</Text>
+          </Box>
       </div>
     </>
   );
